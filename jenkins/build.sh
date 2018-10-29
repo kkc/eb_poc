@@ -1,7 +1,7 @@
 #!/bin/bash -xe
 
 ENV=${ENV:-dev}
-GIT_COMMIT_ID=$(git rev-parse HEAD)
+GIT_COMMIT_ID=$(git rev-parse --short HEAD)
 BUCKET_NAME=${BUCKET_NAME:-tthouse-chatbotapi-eb}
 
 # Create a new application version
